@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="riceLeaf" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="35%" stop-color="#22c55e"/>
+      <stop offset="65%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <radialGradient id="blastSpindle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="40%" stop-color="#cbd5e1"/>
+      <stop offset="70%" stop-color="#7f1d1d"/>
+      <stop offset="90%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0.8"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="#f1f5f9" rx="16"/>
+  <rect x="12" y="12" width="376" height="376" fill="#ffffff" rx="12" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Rice blade (slender linear grass-like leaf) -->
+  <path d="M 200,30 
+           C 225,90 240,200 235,370 
+           L 165,370 
+           C 160,200 175,90 200,30 Z" 
+        fill="url(#riceLeaf)" stroke="#15803d" stroke-width="2"/>
+
+  <!-- Fine parallel veins -->
+  <line x1="200" y1="30" x2="200" y2="370" stroke="#fef08a" stroke-width="2.5" opacity="0.9"/>
+  <line x1="188" y1="50" x2="182" y2="370" stroke="#86efac" stroke-width="1" opacity="0.6"/>
+  <line x1="212" y1="50" x2="218" y2="370" stroke="#86efac" stroke-width="1" opacity="0.6"/>
+
+  <!-- Spindle / Eye-shaped diamond lesions (Rice Blast) -->
+  <!-- Spindle 1 -->
+  <path d="M 180,140 C 190,125 210,125 220,140 C 210,155 190,155 180,140 Z" fill="url(#blastSpindle)"/>
+  <path d="M 186,140 C 193,132 207,132 214,140 C 207,148 193,148 186,140 Z" fill="#f1f5f9"/>
+
+  <!-- Spindle 2 (larger) -->
+  <path d="M 175,220 C 190,195 215,195 230,220 C 215,245 190,245 175,220 Z" fill="url(#blastSpindle)"/>
+  <path d="M 183,220 C 194,205 211,205 222,220 C 211,235 194,235 183,220 Z" fill="#e2e8f0"/>
+
+  <!-- Spindle 3 (lower) -->
+  <path d="M 170,290 C 182,275 200,275 212,290 C 200,305 182,305 170,290 Z" fill="url(#blastSpindle)"/>
+
+  <!-- Caption badge -->
+  <rect x="25" y="25" width="150" height="30" rx="6" fill="#fee2e2" stroke="#fca5a5"/>
+  <text x="35" y="45" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#991b1b">Rice: Rice Blast</text>
+  <text x="330" y="45" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#64748b">Sample #7</text>
+</svg>

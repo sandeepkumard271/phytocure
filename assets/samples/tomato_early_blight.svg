@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="leafGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="60%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </radialGradient>
+    <radialGradient id="blightCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#27150c"/>
+      <stop offset="40%" stop-color="#451a03"/>
+      <stop offset="70%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#ca8a04" stop-opacity="0.8"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ca8a04" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#eab308" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background soft canvas -->
+  <rect width="400" height="400" fill="#f1f5f9" rx="16"/>
+  <rect x="12" y="12" width="376" height="376" fill="#ffffff" rx="12" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Stem -->
+  <path d="M 200,370 C 205,300 200,230 198,120" stroke="#713f12" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Tomato Leaf Silhouette (Compound Serrated Lobes) -->
+  <path d="M 198,80 
+           C 220,100 270,120 280,160 
+           C 255,165 240,155 245,185 
+           C 275,195 300,225 290,260 
+           C 260,250 240,240 230,270 
+           C 215,310 205,340 198,360
+           C 190,340 180,310 165,270 
+           C 155,240 135,250 105,260 
+           C 95,225 120,195 150,185 
+           C 155,155 140,165 115,160 
+           C 125,120 175,100 198,80 Z" 
+        fill="url(#leafGrad)" stroke="#166534" stroke-width="2"/>
+
+  <!-- Main Veins -->
+  <path d="M 198,85 L 198,350" stroke="#86efac" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 198,150 Q 240,155 270,170" stroke="#86efac" stroke-width="2" opacity="0.5" fill="none"/>
+  <path d="M 198,150 Q 155,155 125,170" stroke="#86efac" stroke-width="2" opacity="0.5" fill="none"/>
+  <path d="M 198,220 Q 250,230 280,245" stroke="#86efac" stroke-width="2" opacity="0.5" fill="none"/>
+  <path d="M 198,220 Q 145,230 115,245" stroke="#86efac" stroke-width="2" opacity="0.5" fill="none"/>
+
+  <!-- Early Blight Concentric Target Ring Lesions -->
+  <!-- Lesion 1 (Major) -->
+  <circle cx="235" cy="190" r="32" fill="url(#halo)"/>
+  <ellipse cx="235" cy="190" rx="24" ry="22" fill="url(#blightCenter)"/>
+  <ellipse cx="235" cy="190" rx="18" ry="16" fill="none" stroke="#78350f" stroke-width="2" opacity="0.8"/>
+  <ellipse cx="235" cy="190" rx="12" ry="11" fill="none" stroke="#451a03" stroke-width="2" opacity="0.9"/>
+  <ellipse cx="235" cy="190" rx="6" ry="5" fill="#1c0a02"/>
+
+  <!-- Lesion 2 -->
+  <circle cx="155" cy="240" r="24" fill="url(#halo)"/>
+  <ellipse cx="155" cy="240" rx="18" ry="16" fill="url(#blightCenter)"/>
+  <ellipse cx="155" cy="240" rx="12" ry="10" fill="none" stroke="#78350f" stroke-width="1.5"/>
+  <ellipse cx="155" cy="240" rx="5" ry="4" fill="#1c0a02"/>
+
+  <!-- Lesion 3 (Small satellite) -->
+  <circle cx="185" cy="130" r="14" fill="url(#halo)"/>
+  <ellipse cx="185" cy="130" rx="9" ry="8" fill="url(#blightCenter)"/>
+  <circle cx="185" cy="130" r="3" fill="#1c0a02"/>
+
+  <!-- Lesion 4 (Edge necrosis) -->
+  <circle cx="270" cy="240" r="16" fill="url(#halo)"/>
+  <ellipse cx="270" cy="240" rx="11" ry="10" fill="url(#blightCenter)"/>
+
+  <!-- Caption badge -->
+  <rect x="25" y="25" width="170" height="30" rx="6" fill="#fee2e2" stroke="#fca5a5"/>
+  <text x="35" y="45" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#991b1b">Tomato: Early Blight</text>
+  <text x="330" y="45" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#64748b">Sample #1</text>
+</svg>

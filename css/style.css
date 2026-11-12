@@ -1,0 +1,278 @@
+/*
+ * PhytoCure AI - Botanical Pathology & Precision Agronomy System
+ * Clean, Authoritative, Non-Generic Design
+ */
+
+:root {
+  --primary-forest: #0f392b;
+  --primary-deep: #14532d;
+  --primary-green: #15803d;
+  --primary-accent: #059669;
+  --accent-light: #ecfdf5;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --surface-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --border-subtle: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --danger-accent: #dc2626;
+  --warning-accent: #d97706;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-main);
+  background-color: var(--surface-bg);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Navbar */
+.navbar-phytocure {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.brand-badge {
+  background-color: #f0fdf4;
+  color: var(--primary-deep);
+  border: 1px solid #bbf7d0;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.nav-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+  padding: 0.45rem 0.85rem !important;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  color: var(--primary-deep);
+  background-color: #f1f5f9;
+}
+
+.nav-link.active {
+  color: var(--primary-deep) !important;
+  font-weight: 600;
+  background-color: #f0fdf4;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 3.5rem 0 3rem 0;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background-color: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  border-radius: 9999px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.hero-title .text-forest {
+  color: #166534;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn-primary-forest {
+  background-color: #14532d;
+  color: #ffffff;
+  border: 1px solid #14532d;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-primary-forest:hover {
+  background-color: #0f392b;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(20, 83, 45, 0.25);
+}
+
+.btn-outline-forest {
+  background-color: transparent;
+  color: #14532d;
+  border: 1.5px solid #14532d;
+  font-weight: 600;
+}
+
+.btn-outline-forest:hover {
+  background-color: #f0fdf4;
+  color: #0f392b;
+}
+
+/* Bio / Plant Cards */
+.bio-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bio-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.06), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+}
+
+/* Drop Zone */
+.scanner-dropzone {
+  border: 2px dashed #cbd5e1;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scanner-dropzone:hover,
+.scanner-dropzone.drop-active {
+  border-color: #16a34a;
+  background-color: #f0fdf4;
+}
+
+/* Diagnostic Canvas */
+#diagnosticCanvas {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-color: #0f172a;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+/* Scanning Overlay Spinner */
+.scanning-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.92);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  z-index: 20;
+}
+
+/* Sample Leaf Pill Buttons */
+.sample-select-btn {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #334155;
+  transition: all 0.15s;
+}
+
+.sample-select-btn:hover {
+  border-color: #166534;
+  color: #166534;
+  background-color: #f0fdf4;
+}
+
+/* Badges */
+.badge-property {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  font-weight: 500;
+  font-size: 0.76rem;
+}
+
+/* Timeline */
+.timeline-box {
+  background-color: #ffffff;
+  border: 1px solid var(--border-subtle);
+}
+
+/* Chat Assistant */
+.chat-container {
+  height: 400px;
+  overflow-y: auto;
+  background-color: #f8fafc;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.chat-prompt-pill {
+  font-size: 0.78rem;
+  border-radius: 9999px;
+  padding: 0.3rem 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.chat-prompt-pill:hover {
+  background-color: #f0fdf4;
+  border-color: #16a34a;
+  color: #166534;
+}
+
+/* Metric Stats Counter */
+.stat-box {
+  background-color: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+/* Footer */
+.footer-section {
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-subtle);
+  padding: 2.5rem 0;
+  margin-top: 4rem;
+}
+
+/* Print Clean Stylesheet */
+@media print {
+  body {
+    background-color: #ffffff;
+  }
+  .navbar, .hero-section, .scanner-dropzone, .sample-pills-row,
+  .btn, .nav-tabs, .footer-section, .chat-container, .no-print {
+    display: none !important;
+  }
+  #diagnosisResultSection {
+    display: block !important;
+  }
+  .card {
+    border: 1px solid #333 !important;
+    box-shadow: none !important;
+  }
+}

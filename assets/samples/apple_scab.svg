@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="appleLeaf" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </radialGradient>
+    <radialGradient id="scabLesion" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="#f1f5f9" rx="16"/>
+  <rect x="12" y="12" width="376" height="376" fill="#ffffff" rx="12" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Stem -->
+  <path d="M 200,370 Q 198,310 196,100" stroke="#854d0e" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Elliptical serrated Apple leaf -->
+  <path d="M 196,75 
+           C 270,110 320,180 300,270 
+           C 280,330 230,355 196,365 
+           C 160,355 110,330 90,270 
+           C 70,180 120,110 196,75 Z" 
+        fill="url(#appleLeaf)" stroke="#166534" stroke-width="2"/>
+
+  <!-- Leaf Vein pattern -->
+  <path d="M 196,75 L 196,365" stroke="#bbf7d0" stroke-width="2.5" opacity="0.7"/>
+  <path d="M 196,130 Q 240,150 280,170" stroke="#bbf7d0" stroke-width="1.5" opacity="0.6" fill="none"/>
+  <path d="M 196,130 Q 150,150 110,170" stroke="#bbf7d0" stroke-width="1.5" opacity="0.6" fill="none"/>
+  <path d="M 196,190 Q 245,210 290,230" stroke="#bbf7d0" stroke-width="1.5" opacity="0.6" fill="none"/>
+  <path d="M 196,190 Q 145,210 100,230" stroke="#bbf7d0" stroke-width="1.5" opacity="0.6" fill="none"/>
+  <path d="M 196,250 Q 240,270 270,290" stroke="#bbf7d0" stroke-width="1.5" opacity="0.6" fill="none"/>
+  <path d="M 196,250 Q 150,270 120,290" stroke="#bbf7d0" stroke-width="1.5" opacity="0.6" fill="none"/>
+
+  <!-- Scab lesions (Olive-green to velvety dark spots with puckering) -->
+  <circle cx="230" cy="160" r="22" fill="url(#scabLesion)"/>
+  <circle cx="240" cy="150" r="14" fill="#0f172a" opacity="0.6"/>
+  <circle cx="160" cy="180" r="18" fill="url(#scabLesion)"/>
+  <circle cx="210" cy="240" r="26" fill="url(#scabLesion)"/>
+  <circle cx="220" cy="248" r="15" fill="#0f172a" opacity="0.7"/>
+  <circle cx="145" cy="265" r="15" fill="url(#scabLesion)"/>
+  <circle cx="260" cy="210" r="12" fill="url(#scabLesion)"/>
+  <circle cx="175" cy="120" r="10" fill="url(#scabLesion)"/>
+
+  <!-- Caption badge -->
+  <rect x="25" y="25" width="160" height="30" rx="6" fill="#fef3c7" stroke="#fde68a"/>
+  <text x="35" y="45" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#92400e">Apple: Apple Scab</text>
+  <text x="330" y="45" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#64748b">Sample #3</text>
+</svg>
